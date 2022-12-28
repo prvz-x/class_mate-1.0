@@ -1,0 +1,474 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    min-height: 100vh;
+    background-image: url("../images/banner_bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(246, 245, 246, 0.7);
+    z-index: -1;
+}
+
+.bg_images img {
+    width: 69%;
+    position: absolute;
+    left: 90%;
+    top: 0px;
+    bottom: 0px;
+    transform: translateX(-90%);
+}
+
+.navbar-brand img {
+    width: 30%;
+}
+
+.navbar-collapse {
+    position: absolute;
+    right: -48px;
+    transform: translateX(48px);
+    background: linear-gradient(to right, rgb(97, 97, 215) 0%, rgb(118, 120, 225) 49%, rgb(118, 120, 225) 50%, rgb(147, 151, 241) 100%);
+    border-radius: 24px;
+    box-shadow: rgba(153, 153, 153, 0.33) 0px 0px 5px 5px;
+    padding: 0px 48px;
+}
+
+.nav-link {
+    padding: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    text-transform: capitalize;
+    font-family: "Baloo Paaji 2";
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 54px;
+    position: relative;
+    color: rgb(255, 255, 255) !important;
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    width: 100%;
+    height: 0%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before {
+    height: 89%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 5px;
+}
+
+.form-control {
+    padding: 0px 0px 0px 8px;
+    border-radius: 10px;
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900;
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translate(-90%, -50%);
+    font-size: 20px;
+    color: rgb(102, 103, 218);
+}
+
+.banner {
+    min-height: 80vh;
+    display: flex;
+    align-items: center !important;
+}
+
+.banner_text h4 {
+    font-family: "Baloo Paaji 2";
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 85px;
+    color: rgb(70, 68, 68);
+    margin-left: 6px;
+}
+
+.banner_text h1 {
+    font-family: "Baloo Paaji 2";
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 60px;
+    color: rgb(94, 94, 214);
+}
+
+.banner_text h2 {
+    font-family: "Baloo Paaji 2";
+    font-weight: 600;
+    font-size: 72px;
+    color: rgb(71, 70, 70);
+    margin-left: 5px;
+}
+
+.banner_text p {
+    font-family: "Baloo Paaji 2";
+    font-weight: 400;
+    font-size: 18px;
+    word-spacing: 4px;
+    line-height: 32px;
+    color: rgb(71, 70, 70);
+    margin: 6px auto 12px 5px;
+}
+
+.banner_pic img {
+    position: absolute;
+    top: 99%;
+    right: -2%;
+    transform: translate(2%, -99%);
+    width: 45% !important;
+}
+
+.btn_x {
+    font-family: "Baloo Paaji 2";
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid rgb(97, 97, 216);
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(97, 97, 215) 0%, rgb(118, 120, 225) 49%, rgb(118, 120, 225) 50%, rgb(147, 151, 241) 100%);
+    padding: 6px 36px;
+    box-shadow: rgba(153, 153, 153, 0.42) 0px 0px 3px 3px;
+    color: rgb(253, 251, 251) !important;
+}
+
+.btn_y {
+    font-family: "Baloo Paaji 2";
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid rgb(97, 97, 216);
+    border-radius: 20px;
+    background: transparent;
+    padding: 6px 36px;
+    box-shadow: rgba(153, 153, 153, 0.42) 0px 0px 3px 3px;
+    margin-left: 20px;
+    color: rgb(70, 70, 70) !important;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    right: -7%;
+    transform: translate(-50%, 7%);
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    left: -7%;
+    transform: translate(-50%, 7%);
+}
+
+.owl-nav i {
+    font-size: 30px;
+    color: rgb(97, 97, 216);
+}
+
+.owl-dots {
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-98%, -50%);
+}
+
+.owl-dots .owl-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background: rgb(153, 153, 153) !important;
+}
+
+.owl-dots .owl-dot:active {
+    width: 10px;
+    height: 10px;
+    background: rgb(94, 94, 213) !important;
+}
+
+.hading_text h1 {
+    text-transform: capitalize;
+    font-family: "Baloo Paaji 2";
+    font-weight: 600;
+    font-size: 48px;
+    color: rgb(94, 94, 214);
+}
+
+.hading_text span {
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: auto;
+    position: relative;
+}
+
+.hading_text span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: .4s all ease-in-out;
+}
+
+.hading_text:hover span::before {
+    width: 48%;
+    background: rgb(97, 97, 216);
+}
+
+.hading_text span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    transition: .4s all ease-in-out;
+}
+
+.hading_text:hover span::after {
+    width: 48%;
+    background: rgb(97, 97, 216);
+}
+
+.hading_text p {
+    text-transform: capitalize;
+    font-family: "Baloo Paaji 2";
+    font-weight: 500;
+    font-size: 17px;
+    color: rgb(70, 70, 70);
+    margin-top: 10px;
+}
+
+.class_mate {
+    width: 100%;
+    background: rgb(249, 249, 249);
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.class_mate_pic {
+    position: relative;
+}
+
+.class_mate_pic ul {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.class_mate:hover .class_mate_pic ul {
+    opacity: 1;
+}
+
+.class_mate_pic ul li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.class_mate_pic ul li:hover {
+    background: rgb(97 97 216);
+}
+
+.class_mate_pic ul li a {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.class_mate_pic::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.class_mate:hover .class_mate_pic::before {
+    height: 100%;
+    background: rgba(94, 94, 214, 0.46);
+}
+
+.class_mate_text h3 {
+    font-family: "Baloo Paaji 2";
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+}
+
+.class_mate:hover .class_mate_text h3 {
+    color: rgb(97, 97, 216);
+}
+
+.class_mate_text p {
+    text-transform: capitalize;
+    font-family: "Baloo Paaji 2";
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(70, 70, 70);
+}
+
+.class_mate span {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background: rgba(33, 37, 41, 0.42);
+}
+
+.class_mate:hover span {
+    height: 3px;
+    background: rgb(97, 97, 216);
+}
+
+.meet_up {
+    width: 95%;
+    border: 2px solid #fff;
+}
+
+.meet_up:hover {
+    border: 2px solid rgb(97, 97, 216);
+}
+
+.plan {
+    background: transparent;
+}
+
+.plan h3 {
+    text-transform: capitalize;
+    font-family: "Baloo Paaji 2";
+    font-weight: 600;
+    font-size: 30px;
+    color: #424242;
+}
+
+.plan p {
+    font-family: "Baloo Paaji 2";
+    font-weight: 500;
+    font-size: 17px;
+    color: #424242;
+}
+
+.timing {
+    background: #f9f9f9;
+}
+
+.meet_up:hover .timing {
+    background: rgb(97, 97, 216);
+}
+
+.timing h1 {
+    font-family: "Baloo Paaji 2";
+    font-weight: 700;
+    font-size: 44px;
+    color: #424242;
+}
+
+.meet_up:hover .timing h1 {
+    color: #fff;
+}
+
+.timing p {
+    text-transform: capitalize;
+    font-family: "Baloo Paaji 2";
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+}
+
+.meet_up:hover .timing p {
+    color: #fff;
+}
+
+.text_b p {
+    text-transform: capitalize;
+    font-family: "Baloo Paaji 2";
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25px;
+    color: #424242;
+    padding: 0px 70px 20px;
+}
+
+.accordion-item {
+    border: none;
+    border-radius: 20px !important;
+    margin-bottom: 12px;
+}
+
+.accordion-button {
+    font-family: "Baloo Paaji 2";
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    background: #5e5ed69c;
+    border-radius: 20px !important;
+}
+
+.accordion-button:focus {
+    border-color: transparent !important;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #5e5ed68c;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
